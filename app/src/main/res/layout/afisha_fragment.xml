@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="137dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Афиша"
+        android:textColor="#060917"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18.5dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/all"
+                android:layout_width="37dp"
+                android:layout_height="33dp"
+                android:background="@drawable/ic_baseline_grid_3x3_24"
+                android:onClick="onAllClick" />
+
+            <TextView
+                android:id="@+id/all_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onAllClick"
+                android:text="Все"
+                android:textColor="#383B46"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/i_go"
+                android:layout_width="37dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="29dp"
+                android:background="@drawable/ic_baseline_check_24" />
+
+            <TextView
+                android:id="@+id/i_go_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Я пойду"
+                android:textColor="#383B46"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/town_m"
+                android:layout_width="37dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="29dp"
+                android:background="@drawable/ic_baseline_location_city_24" />
+
+            <TextView
+                android:id="@+id/town_m_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="В Мурманске"
+                android:textColor="#383B46"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/list_afisha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
