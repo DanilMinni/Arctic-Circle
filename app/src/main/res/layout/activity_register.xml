@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="306dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:text="Регистрация"
+        android:textColor="#060917"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="73dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yang"
+        android:layout_width="91dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="top"
+        android:lineSpacingExtra="-5sp"
+        android:text="Молодая Арктика"
+        android:textColor="#060917"
+        android:textSize="21.08sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:gravity="top"
+                android:text="ФИО\*"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+            <EditText
+                android:id="@+id/fio"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:ems="10"
+                android:hint="Иванов Иван Иванович"
+                android:inputType="text"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/email4"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:text="Дата рождения"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="350dp"
+                    android:layout_height="41dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="01.01.1990"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/email" />
+
+                <ImageButton
+                    android:id="@+id/select_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_calendar_month_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email6"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:text="Телефон"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:ems="10"
+                android:hint="+7 (999) 123-45-67"
+                android:inputType="phone"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/email9"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:text="Электронная почта\*"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+            <EditText
+                android:id="@+id/mail_registrate"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/password2"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:text="Пароль\*"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password">
+
+                <EditText
+                    android:id="@+id/password_registrate"
+                    android:layout_width="350dp"
+                    android:layout_height="41dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="Введите пароль"
+                    android:inputType="textPassword|numberPassword"
+                    android:padding="10dp" />
+
+                <ImageButton
+                    android:id="@+id/show_password_registrate"
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_remove_red_eye_24" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/password3"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:layout_marginTop="16dp"
+                android:gravity="top"
+                android:text="Повторите пароль*"
+                android:textColor="#1F222F"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+            <EditText
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_for_enter"
+                android:ems="10"
+                android:hint="Повторите пароль"
+                android:inputType="textPassword|numberPassword"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <CheckBox
+                android:id="@+id/confirm_rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Принимаю условия Пользовательского соглашения и Политики конфиденциальности"
+                android:textColor="#060917"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/rassilky"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Я хочу получать рассылки и уведомления"
+                android:textColor="#060917"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/registrate_registrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="42dp"
+                android:layout_marginBottom="100dp"
+                android:background="@drawable/enter_button"
+                android:text="Зарегистрироваться"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Уже есть аккаунт?"
+                android:textColor="#51535D"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enter"
+                tools:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/enter_registrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="100dp"
+                android:text="Войти"
+                android:textColor="#7D3EDC"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/enter" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

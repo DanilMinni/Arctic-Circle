@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "817614359098",
+    "project_id": "arctic-circle-10b17",
+    "storage_bucket": "arctic-circle-10b17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817614359098:android:c7ffa95c7562ed97374303",
+        "android_client_info": {
+          "package_name": "com.example.arctic_circle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817614359098-qko8spcrf1duhkfadncvac9a2omoubeg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaP5Iw2zCQY9pGtQ4OLu5qltrsyDI8J7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817614359098-qko8spcrf1duhkfadncvac9a2omoubeg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
