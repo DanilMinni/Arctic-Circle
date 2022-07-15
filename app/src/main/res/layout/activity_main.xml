@@ -6,28 +6,62 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/news"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textNews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать, Вы вошли "
-        android:textSize="30sp"
-        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="OnNewsClick"
+        android:text="Новости"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/news"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_backup_table_24"
+        android:onClick="OnNewsClick"
+        app:layout_constraintBottom_toTopOf="@+id/textNews"
+        app:layout_constraintEnd_toEndOf="@+id/textNews"
+        app:layout_constraintStart_toStartOf="@+id/textNews" />
+
+    <TextView
+        android:id="@+id/textNews2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Выйти"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="OnAfishaClick"
+        android:text="Афиша"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textNews" />
+
+    <Button
+        android:id="@+id/afisha"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_baseline_calendar_today_24"
+        android:onClick="OnAfishaClick"
+        app:layout_constraintBottom_toTopOf="@+id/textNews2"
+        app:layout_constraintEnd_toEndOf="@+id/textNews2"
+        app:layout_constraintStart_toStartOf="@+id/textNews2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

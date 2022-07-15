@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/welcome"
-        android:layout_width="388dp"
-        android:layout_height="40dp"
+        android:layout_width="365dp"
+        android:layout_height="41dp"
         android:layout_marginTop="40dp"
         android:gravity="top"
         android:text="Восстановление пароля"

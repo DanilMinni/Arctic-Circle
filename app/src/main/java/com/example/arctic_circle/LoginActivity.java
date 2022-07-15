@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -23,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
     Button btnLogin;
     TextView register;
     TextView forgotPass;
+    CheckBox rememberMe;
 
     FirebaseAuth mAuth;
 
@@ -36,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLog);
         register = findViewById(R.id.reg);
         forgotPass = findViewById(R.id.forgot);
+        rememberMe = findViewById(R.id.rememberMe);
 
         mAuth = FirebaseAuth.getInstance();
 

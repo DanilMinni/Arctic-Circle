@@ -123,12 +123,12 @@
         app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/rememberMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:text="Запомнит меня"
+        android:text="Запомнить меня"
         android:textColor="#383B46"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +144,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.965"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintStart_toEndOf="@+id/rememberMe"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:textColor="#7D3EDC" />
 

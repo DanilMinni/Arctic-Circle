@@ -4,8 +4,11 @@ import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import com.firebase.ui.auth.AuthUI;
@@ -19,7 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLogOut;
+    public int i = 0;
     private FirebaseAuth mAuth;
 
     @Override
@@ -27,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnLogOut = findViewById(R.id.btnLogout);
-
         mAuth = FirebaseAuth.getInstance();
     }
+
+    Boolean arg = true;
 
     @Override
     public void onStart() {
@@ -40,5 +43,44 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, LoginActivity.class));
         }
     }
+
+    public void OnNewsClick (View v) {
+
+        // получаем экземпляр FragmentTransaction
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction();
+
+        // добавляем фрагмент
+        NewsFragment myFragment = new NewsFragment();
+        if (i == 0) {
+            fragmentTransaction.add(R.id.container, myFragment);
+            fragmentTransaction.commit();
+            i += 1;
+        } else {
+            fragmentTransaction.replace(R.id.container, myFragment);
+            fragmentTransaction.commit();
+        }
+    }
+    public void OnAfishaClick (View v) {
+
+
+        // получаем экземпляр FragmentTransaction
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction();
+
+        // добавляем фрагмент
+        AfishaFragment myFragment = new AfishaFragment();
+        if (i == 0) {
+            fragmentTransaction.add(R.id.container, myFragment);
+            fragmentTransaction.commit();
+            i += 1;
+        } else {
+            fragmentTransaction.replace(R.id.container, myFragment);
+            fragmentTransaction.commit();
+        }
+    }
+
 
 }

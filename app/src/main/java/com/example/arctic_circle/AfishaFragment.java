@@ -1,18 +1,16 @@
-package com.example.xak;
+package com.example.arctic_circle;
 
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
+import android.widget.ImageView;
 
 public class AfishaFragment extends Fragment implements View.OnClickListener {
     public int i =0;
+    ImageView rImage;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -25,6 +23,7 @@ public class AfishaFragment extends Fragment implements View.OnClickListener {
         view.findViewById(R.id.town_m).setOnClickListener(this);
         view.findViewById(R.id.town_m_txt).setOnClickListener(this);
         return view;
+
 
     }
 
