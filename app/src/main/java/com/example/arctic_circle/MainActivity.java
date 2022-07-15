@@ -82,5 +82,26 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void OnProfileClick (View v) {
+
+
+        // получаем экземпляр FragmentTransaction
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager
+                .beginTransaction();
+
+        // добавляем фрагмент
+        ProfileFragment myFragment = new ProfileFragment();
+        if (i == 0) {
+            fragmentTransaction.add(R.id.container, myFragment);
+            fragmentTransaction.commit();
+            i += 1;
+        } else {
+            fragmentTransaction.replace(R.id.container, myFragment);
+            fragmentTransaction.commit();
+        }
+    }
+
+
 
 }

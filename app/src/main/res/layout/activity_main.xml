@@ -64,4 +64,27 @@
         app:layout_constraintEnd_toEndOf="@+id/textNews2"
         app:layout_constraintStart_toStartOf="@+id/textNews2" />
 
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="OnProfileClick"
+        android:text="Профиль"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textNews2" />
+
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ava_is_database"
+        android:onClick="OnProfileClick"
+        app:layout_constraintBottom_toTopOf="@+id/profile_txt"
+        app:layout_constraintEnd_toEndOf="@+id/profile_txt"
+        app:layout_constraintStart_toStartOf="@+id/profile_txt" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

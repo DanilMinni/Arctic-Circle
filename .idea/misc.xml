@@ -7,14 +7,22 @@
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/drawable-v24/ic_baseline_calendar_month_24.xml" value="0.2985" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/drawable-v24/ic_baseline_grid_3x3_24.xml" value="0.196" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w1240dp/activity_reset.xml" value="0.23560910307898258" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w1240dp/challendg_fragment.xml" value="0.21135831381733022" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w1240dp/main_set_fragment.xml" value="0.12081659973226239" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w1240dp/profile_fragment.xml" value="0.12081659973226239" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w1240dp/style_fragment.xml" value="0.21135831381733022" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout-w936dp/activity_reset.xml" value="0.27049180327868855" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/activity_login.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/activity_register.xml" value="0.358695652173913" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/activity_reset.xml" value="0.358695652173913" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/afisha_fragment.xml" value="0.33" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/challendg_fragment.xml" value="0.15341880341880343" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/list_itam_afisha.xml" value="0.33" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/main_set_fragment.xml" value="0.18697916666666667" />
         <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/news_fragment.xml" value="0.2512178148921364" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/profile_fragment.xml" value="0.15341880341880343" />
+        <entry key="..\:/Users/dmine/AndroidStudioProjects/ArcticCircle/app/src/main/res/layout/style_fragment.xml" value="0.140234375" />
       </map>
     </option>
   </component>
